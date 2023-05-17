@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    container_name: webrtc-listener
+    ports:
+      - '3000:3000'
+    volumes:
+      - /var/log:/usr/src/app
+    restart: always
